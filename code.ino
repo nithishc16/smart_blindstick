@@ -13,8 +13,8 @@ const int echoPin1 = A1;
 const int trigPin2 = A4;
 const int echoPin2 = A3;
 
-float demoLatitude = 18.5849324;
-float demoLongitude = 73.6553194;
+float demoLatitude = 18.5849324;// your lattitude address
+float demoLongitude = 73.6553194;// your longitude address
 
 bool gpsFixAvailable = false;
 bool demoSent = false;
@@ -214,7 +214,7 @@ void readGsmForTrackCommand() {
       Serial.println("INSIDE track");
       gsmSerial.println("AT+CMGF=1");
       delay(1000);
-      gsmSerial.println("AT+CMGS=\"+917019415675\"\r");
+      gsmSerial.println("AT+CMGS=\"+91 your mobilenumber\"\r");//+91 or your  country code is mandatory 
       delay(1000);
       p = get_gps();
 
