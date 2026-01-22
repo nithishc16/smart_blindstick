@@ -240,7 +240,7 @@ void readGsmForTrackCommand() {
 void SendMessage() {
   gsmSerial.println("AT+CMGF=1");
   delay(500);
-  gsmSerial.println("AT+CMGS=\"+917019415675\"\r"); //7019415675
+  gsmSerial.println("AT+CMGS=\"+91your mobilenumber\"\r"); // +91 or your countrycode is mandatory
   delay(500);
 
   gsmSerial.print("I Am In Problem Plz Help Me. My Location: ");
