@@ -197,7 +197,7 @@ float* get_gps() {
   if (!demoSent) {
     gpsFixAvailable = false;
     demoSent = true;
-    Serial.println("GPS signal not available, sending demo location.");
+    Serial.println("GPS signal not available, sending demo location.");//if gps could not find the location
     gpsData[0] = demoLatitude;
     gpsData[1] = demoLongitude;
     return gpsData;
