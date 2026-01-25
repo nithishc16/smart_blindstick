@@ -243,7 +243,7 @@ void SendMessage() {
   gsmSerial.println("AT+CMGS=\"+91your mobilenumber\"\r"); // +91 or your countrycode is mandatory
   delay(500);
 
-  gsmSerial.print("I Am In Problem Plz Help Me. My Location: ");
+  gsmSerial.print("I Am In Problem Plz Help Me. My Location: ");//this message will be the default message send to the caretacker
   p = get_gps();
   gsmSerial.listen();
 
