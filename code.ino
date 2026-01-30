@@ -1,4 +1,4 @@
-#include <SoftwareSerial.h>
+#include <SoftwareSerial.h> //LIBRARY AVAILABLE IN ARDUINO IDE
 #include <TinyGPS++.h>
 
 #define BUZZER_PIN 6  
