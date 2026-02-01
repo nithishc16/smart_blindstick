@@ -104,7 +104,7 @@ void measureUltrasonicDistances() {
   Serial.print("Distance2: "); Serial.println(distance2);
 
   if (distance1 <= 15) {  //you can set the distance according to your choice
-    setBuzzerPattern(1);
+    setBuzzerPattern(1); //if the condition is set to be ok the it triggers the buzzer sound
   } else if (distance2 <= 15) {
     setBuzzerPattern(2);
   } else if (distance1 <= 20 || distance2 <= 20) {
