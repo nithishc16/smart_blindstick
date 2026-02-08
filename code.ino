@@ -16,11 +16,11 @@ const int echoPin2 = A3;
 float demoLatitude = 18.5849324;// your lattitude address if gsm could not find the location
 float demoLongitude = 73.6553194;// your longitude address if gsm could not find the location
 
-bool gpsFixAvailable = false;
-bool demoSent = false;
+bool gpsFixAvailable =false;
+bool demoSent =false;
 
-long duration1, duration2;
-int distance1, distance2;
+long duration1,duration2;
+int distance1,distance2;
 
 float latitude, longitude;
 float gpsData[2];
