@@ -26,11 +26,11 @@ float latitude, longitude;
 float gpsData[2];
 float* p;
 
-unsigned long buzzerTimer = 0;
-unsigned long buzzerInterval = 0;
-int buzzerState = LOW;
-int buzzerBeepCount = 0;
-int buzzerPattern = 0;  
+unsigned long buzzerTimer =0;
+unsigned long buzzerInterval =0;
+int buzzerState =LOW;
+int buzzerBeepCount =0;
+int buzzerPattern =0;  
 
 // Function prototypes
 void readGsmForTrackCommand();
