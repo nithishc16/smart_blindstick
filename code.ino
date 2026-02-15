@@ -67,12 +67,14 @@ void setup()
 }
 
 void loop() 
+
 {
   measureUltrasonicDistances();
   handleBuzzerPattern();
   checkRainSensorAndAlert();
 
-  if (digitalRead(BUTTON_PIN) == LOW) {
+  if (digitalRead(BUTTON_PIN) == LOW) 
+  {
     delay(50); // debounce
     if (digitalRead(BUTTON_PIN) == LOW) {
       Serial.println("button pressed");
