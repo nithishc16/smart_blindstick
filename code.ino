@@ -41,7 +41,8 @@ void checkRainSensorAndAlert();
 float* get_gps();
 void SendMessage();
 
-void setup() {
+void setup()
+{
   pinMode(trigPin1, OUTPUT);
   pinMode(echoPin1, INPUT);
   pinMode(trigPin2, OUTPUT);
