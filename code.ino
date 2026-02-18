@@ -66,7 +66,6 @@ void setup()
 }
 
 void loop() 
-
 {
   measureUltrasonicDistances();
   handleBuzzerPattern();
