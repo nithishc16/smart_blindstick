@@ -63,7 +63,6 @@ void setup()
   delay(2000);
   Serial.println("System Ready");
   delay(1000);
-
 }
 
 void loop() 
